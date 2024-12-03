@@ -7,16 +7,6 @@ import {
   DB_USER
 } from './config.js';
 
-/*
-const pool = new pg.Pool({
-  host: 'db',
-  port: 5432,
-  user: 'user123',
-  password: 'password123',
-  database: "db123"
-});
-*/
-
 const pool = new pg.Pool({
   host: DB_HOST,
   port: DB_PORT,

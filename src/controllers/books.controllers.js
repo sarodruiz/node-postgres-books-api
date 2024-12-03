@@ -43,7 +43,7 @@ export const createBook = async (req, res) => {
 
   try {
     const { rows } = await pool.query(
-      "INSERT INTO books (title, publication_year) VALUES ($1, $2) RETURNING *",
+      "INSERT INTO books (title, year) VALUES ($1, $2) RETURNING *",
       [title, year]
     );
 
@@ -63,7 +63,7 @@ export const updateBook = async (req, res) => {
 
   try {
     const { rows } = await pool.query(
-      "UPDATE books SET title = $1, publication_year = $2 WHERE id = $3 RETURNING *",
+      "UPDATE books SET title = $1, year = $2 WHERE id = $3 RETURNING *",
       [title, year, id]
     );
 
