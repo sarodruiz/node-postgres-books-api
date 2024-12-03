@@ -1,0 +1,1 @@
+# Dockerized REST API using Node.js, Express and PostgreSQL
